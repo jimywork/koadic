@@ -56,6 +56,8 @@ Special thanks to research done by the following individuals:
 - [@tiraniddo](https://twitter.com/tiraniddo)
 - [@harmj0y](https://twitter.com/harmj0y)
 - [@gentilkiwi](https://twitter.com/gentilkiwi)
+- [@mattifestation](https://twitter.com/mattifestation)
+- clymb3r
 - [@Aleph_\__Naught](https://twitter.com/Aleph___Naught)
 - [@The_Naterz](https://twitter.com/The_Naterz)
 - [@jennamagius](https://twitter.com/jennamagius)
