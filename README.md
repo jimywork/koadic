@@ -38,6 +38,7 @@ implant/gather/clipboard | Retrieves the current content of the user clipboard.
 implant/gather/hashdump_sam | Retrieves hashed passwords from the SAM hive.
 implant/gather/hashdump_dc | Domain controller hashes from the NTDS.dit file.
 implant/inject/mimikatz_dynwrapx | Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).
+implant/inject/mimikatz_dotnet2js | Injects a reflective-loaded DLL to run powerkatz.dll (@tirannido DotNetToJS).
 implant/inject/shellcode_excel | Runs arbitrary shellcode payload (if Excel is installed).
 implant/manage/enable_rdesktop | Enables remote desktop on the target.
 implant/manage/exec_cmd | Run an arbitrary command on the target, and optionally receive the output.
