@@ -32,18 +32,17 @@ Module | Description
 --------|------------
 implant/elevate/bypassuac_eventvwr | Uses enigma0x3's eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.
 implant/elevate/bypassuac_sdclt | Uses enigma0x3's sdclt.exe exploit to bypass UAC on Windows 10.
-implant/fun/thunderstruck | Maxes volume and opens a URL in a hidden window (AC/DC YouTube).
+implant/fun/zombie | Maxes volume and opens a URL in a hidden window (The Cranberries on YouTube).
 implant/fun/voice | Plays a message over text-to-speech.
 implant/gather/clipboard | Retrieves the current content of the user clipboard.
 implant/gather/hashdump_sam | Retrieves hashed passwords from the SAM hive.
 implant/gather/hashdump_dc | Domain controller hashes from the NTDS.dit file.
-implant/inject/reflectdll_excel | Injects a reflective-loaded DLL (if Excel is installed).
+implant/inject/mimikatz_dynwrapx | Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).
 implant/inject/shellcode_excel | Runs arbitrary shellcode payload (if Excel is installed).
 implant/manage/enable_rdesktop | Enables remote desktop on the target.
 implant/manage/exec_cmd | Run an arbitrary command on the target, and optionally receive the output.
-implant/manage/killav | iterate known antivirus processes, and attempt to end their execution.
-implant/pivot/exec_wmi | Run a command on another machine using WMI.
-implant/pivot/exec_psexec | Run a command on another machine using psexec.
+implant/pivot/stage_wmi | Hook a zombie on another machine using WMI.
+implant/pivot/exec_psexec | Run a command on another machine using psexec from sysinternals.
 implant/scan/tcp | Uses HTTP to scan open TCP ports on the target zombie LAN.
 implant/utils/download_file | Downloads a file from the target zombie.
 implant/utils/upload_file | Uploads a file from the listening server to the target zombies.
