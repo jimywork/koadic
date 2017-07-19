@@ -60,5 +60,5 @@ Special thanks to research done by the following individuals:
 - clymb3r
 - [@Aleph_\__Naught](https://twitter.com/Aleph___Naught)
 - [@The_Naterz](https://twitter.com/The_Naterz)
-- [@jennamagius](https://twitter.com/jennamagius)
+- [@JennaMagius](https://twitter.com/JennaMagius)
 - [@zerosum0x0](https://twitter.com/zerosum0x0)
