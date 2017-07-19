@@ -48,6 +48,9 @@ implant/scan/tcp | Uses HTTP to scan open TCP ports on the target zombie LAN.
 implant/utils/download_file | Downloads a file from the target zombie.
 implant/utils/upload_file | Uploads a file from the listening server to the target zombies.
 
+### Disclaimer
+Code samples are provided for educational purposes. Adequate defenses can only be built by researching attack techniques available to malicious actors. Using this code against target systems without prior permission is illegal in most jurisdictions. The authors are not liable for any damages from misuse of this information or code.
+
 ### Acknowledgements
 Special thanks to research done by the following individuals:
 
