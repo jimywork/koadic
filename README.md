@@ -32,7 +32,7 @@ Module | Description
 --------|------------
 implant/elevate/bypassuac_eventvwr | Uses enigma0x3's eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.
 implant/elevate/bypassuac_sdclt | Uses enigma0x3's sdclt.exe exploit to bypass UAC on Windows 10.
-implant/fun/zombie | Maxes volume and opens a URL in a hidden window (The Cranberries on YouTube).
+implant/fun/zombie | Maxes volume and opens The Cranberries YouTube in a hidden window.
 implant/fun/voice | Plays a message over text-to-speech.
 implant/gather/clipboard | Retrieves the current content of the user clipboard.
 implant/gather/hashdump_sam | Retrieves hashed passwords from the SAM hive.
