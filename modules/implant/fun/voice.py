@@ -1,0 +1,27 @@
+import core.job
+import core.implant
+import uuid
+
+class VoiceJob(core.job.Job):
+    def done(self):
+        self.display()
+
+    def display(self):
+        self.shell.print_plain(self.data)
+
+class VoiceImplant(core.implant.Implant):
+
+    NAME = "Voice"
+    DESCRIPTION = "Makes the computer speak a message."
+    AUTHORS = ["RiskSense, Inc."]
+
+    def load(self):
+        self.options.register("MESSAGE", "I can't do that Dave", "message to speak")
+
+    def run(self):
+
+        payloads = {}
+        #payloads["vbs"] = self.load_script("data/implant/fun/voice.vbs", self.options)
+        payloads["js"] = self.loader.load_script("data/implant/fun/voice.js", self.options)
+
+        self.dispatch(payloads, VoiceJob)
