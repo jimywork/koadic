@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright (c) 2016 RiskSense, Inc.
+# Copyright (c) 2016 - 2017 RiskSense, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not
 # use the software except in compliance with the License.
@@ -21,8 +21,8 @@
 # federal, and international laws. Developers assume no liability and are not
 # responsible for any misuse or damage caused by this program.
 
-__version_info__ = (0, 7)
-__version__ = ".".join(map(str, __version_info__))
+__version_info__ = (0, 8)
+__version__ = "x".join(map(str, __version_info__))
 __license__ = "Apache 2.0"
 __credits__ = ["zerosum0x0", "jmage", "TheNaterz", "aleph-naught-"]
 

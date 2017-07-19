@@ -47,3 +47,18 @@ implant/pivot/exec_psexec | Run a command on another machine using psexec.
 implant/scan/tcp | Uses HTTP to scan open TCP ports on the target zombie LAN.
 implant/utils/download_file | Downloads a file from the target zombie.
 implant/utils/upload_file | Uploads a file from the listening server to the target zombies.
+
+### Acknowledgements
+Special thanks to research done by the following individuals:
+
+- [@subTee](https://twitter.com/subTee)
+- [@enigma0x3](https://twitter.com/enigma0x3)
+- [@tiraniddo](https://twitter.com/tiraniddo)
+- [@harmj0y](https://twitter.com/harmj0y)
+- [@gentilkiwi](https://twitter.com/gentilkiwi)
+- [@mattifestation](https://twitter.com/mattifestation)
+- clymb3r
+- [@Aleph_\__Naught](https://twitter.com/Aleph___Naught)
+- [@The_Naterz](https://twitter.com/The_Naterz)
+- [@JennaMagius](https://twitter.com/JennaMagius)
+- [@zerosum0x0](https://twitter.com/zerosum0x0)
