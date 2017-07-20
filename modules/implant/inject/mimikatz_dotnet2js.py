@@ -109,7 +109,7 @@ class DynWrapXShellcodeImplant(core.implant.Implant):
         self.options.set("MIMIX86UUID", uuid.uuid4().hex)
 
 
-        self.options.set("SHIMX86BYTES", dllb64(self.options.get("SHIMX86DLL")))
+        self.options.set("SHIMX86BYTES", self.dllb64(self.options.get("SHIMX86DLL")))
 
         workloads = {}
         workloads["js"] = self.loader.load_script("data/implant/inject/mimikatz_dotnet2js.js", self.options)
