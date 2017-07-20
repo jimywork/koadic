@@ -97,7 +97,17 @@ class DynWrapXShellcodeImplant(core.implant.Implant):
     def dllb64(self, path):
         import base64
         with open(path, 'rb') as fileobj:
-            return base64.b64encode(fileobj.read())
+            text =  base64.b64encode(fileobj.read())
+            index = 0
+            ret = '"';
+            for c in text:
+                ret += c
+                index += 1
+                if index % 20 == 0:
+                    ret += '"+\r\n"'
+
+            ret += '";'
+            print ret
 
     def run(self):
 
