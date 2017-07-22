@@ -156,7 +156,16 @@ class Handler(BaseHTTPRequestHandler):
                 return self.reply(403)
 
             if not self.job:
-                return self.handle_work()
+                content_len = int(self.get_header('content-length', 0))
+
+                if content_len == 0:
+                    return self.handle_work()
+
+                data = self.rfile.read(content_len)
+                self.session.parse_user_info(data)
+
+                return self.reply(200)
+
 
             return self.handle_report()
 

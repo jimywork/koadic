@@ -59,7 +59,11 @@ class Shell(object):
             self.actions[action].execute(self, cmd)
         else:
             try:
-                os.system(cmd)
+                self.print_error("Unrecognized command, use 'help'.")
+
+                #
+                # bash lol:
+                #os.system(cmd)
             except:
                 pass
 

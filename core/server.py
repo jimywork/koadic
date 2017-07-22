@@ -97,6 +97,7 @@ class Server(threading.Thread):
             finally:
                 s.close()
 
+        #self.hostname = "127.0.0.1"
         self.hostname = hostname
         self.port = str(self.options.get("LPORT"))
 
