@@ -16,7 +16,7 @@ class VoiceImplant(core.implant.Implant):
     AUTHORS = ["RiskSense, Inc."]
 
     def load(self):
-        self.options.register("messsage", "I can't ddo that Dave", "message to speak")
+        self.options.register("MESSAGE", "I can't do that Dave", "message to speak")
 
     def run(self):
 
